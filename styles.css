@@ -1,0 +1,75 @@
+/* body element */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    background-repeat: no-repeat;
+    background: url('https://images.unsplash.com/photo-1611918126831-0a8352d6196f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* card container */
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* Search bar */
+.search-icon{
+    font-size: 1.5em;
+
+}
+
+/* Search bar container */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* input field */
+input.search-bar{
+    border: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+}
+
+/* search button */
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    width: 44px;
+    height: 44px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #7c7c7c6b;
+}
+
+h1.temp{
+    margin: 0;
+}
