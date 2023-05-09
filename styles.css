@@ -8,7 +8,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
     background-repeat: no-repeat;
-    background: url('https://images.unsplash.com/photo-1611918126831-0a8352d6196f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') no-repeat center center fixed;
+    background: url('https://source.unsplash.com/1600x900/?landscape') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,4 +72,82 @@ button:hover{
 
 h1.temp{
     margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading{
+    display: none;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 100%;
+    }
+
+    .card{
+        border-radius: 50px;
+        width: 80%;
+    }
+
+    input.search-bar{
+        font-size: 100%;
+    }
+
+    button{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (width: 768px) {
+    input.search-bar{
+        font-size: 150%;
+    }
+
+    button{
+        width: 60px;
+        height: 60px;
+    }
+
+    .card{
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    body{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 912px){
+    .search-bar{
+        font-size: 120%;
+    }
+
+    .card{
+        border-radius: 30px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    body{
+        font-size: 140%;
+    }
+
+    button{
+        width: 60px;
+        height: 60px;
+    }
 }
